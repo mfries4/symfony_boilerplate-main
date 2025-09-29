@@ -1,0 +1,29 @@
+{% include '_header.html.twig' %}
+{% include 'base.html.twig' %}
+
+<h2>{% block title %}Liste des Pains{% endblock %}</h2>
+
+{% block body %}
+{% block content %}
+
+
+<div class="sauce-flex">
+    <div class="sauce-form">
+        {{ form_start(form) }}
+            {{ form_row(form.name) }}
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+        {{ form_end(form) }}
+    </div>
+    <div class="sauce-list">
+        <ul>
+        {% for pain in pains %}
+            <li>{{ pain.name }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
+{% endblock %}
+
+{% include '_footer.html.twig' %}

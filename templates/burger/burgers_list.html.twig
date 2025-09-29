@@ -1,0 +1,18 @@
+{% include '_header.html.twig' %}
+{% include 'base.html.twig' %}
+
+<h2>{% block title %}Liste des Burgers{% endblock %}</h2>
+
+{% block body %}
+{% block content %}
+
+<ul>
+{% for burger in burgers %}
+    <li>{{ burger.name }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
+{% endblock %}
+
+{% include '_footer.html.twig' %}

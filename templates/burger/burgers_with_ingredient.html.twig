@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Burgers avec Ingrédient{% endblock %}
+
+{% block body %}
+    <h1>Burgers contenant l'ingrédient sélectionné</h1>
+    {% if burgers is defined and burgers|length > 0 %}
+        <ul>
+            {% for burger in burgers %}
+                <li>{{ burger.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Aucun burger ne contient cet ingrédient.</p>
+    {% endif %}
+{% endblock %}

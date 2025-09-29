@@ -1,0 +1,13 @@
+{% include '_header.html.twig' %}
+{% include 'base.html.twig' %}
+
+<h2>{% block title %}Accueil CRUDCroustillant{% endblock %}</h2>
+
+{% block body %}
+{% block content %}
+    <div><img src="{{ asset('img/burger.jpg') }}" style="max-width:400px;"></div>
+{% endblock %}
+{% endblock %}
+
+{% include '_footer.html.twig' %}
+

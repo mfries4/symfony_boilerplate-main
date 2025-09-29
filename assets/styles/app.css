@@ -1,0 +1,166 @@
+/* Mise en page sauce */
+.sauce-flex {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.sauce-form {
+    background: #fffbe6;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(218,41,28,0.08);
+    padding: 32px 38px 24px 38px;
+    min-width: 420px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sauce-form label {
+    color: #da291c;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.sauce-form input[type="text"] {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 20px;
+    border: 1px solid #ffcc00;
+    font-size: 1.1em;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(218,41,28,0.07);
+}
+
+.sauce-form button {
+    background: #ffcc00;
+    color: #da291c;
+    padding: 12px 28px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.sauce-form button:hover {
+    background: #ffe066;
+    color: #b21807;
+}
+
+.sauce-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 250px;
+}
+header {
+    background: #da291c;
+    padding: 25px 0 10px 0;
+    box-shadow: 0 2px 8px rgba(218,41,28,0.08);
+}
+header h1 {
+    color: #fffbe6;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li a {
+    background: #ffcc00;
+    color: #da291c;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s;
+}
+header nav ul li a:hover {
+    background: #ffe066;
+    color: #b21807;
+}
+
+body {
+    background: #fffbe6;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #da291c;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+li {
+    background: #ffcc00;
+    color: #333;
+    margin: 15px 0;
+    padding: 18px 30px;
+    border-radius: 30px;
+    font-size: 1.3em;
+    box-shadow: 0 4px 12px rgba(218,41,28,0.08);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    background: #ffe066;
+    transform: scale(1.04);
+    box-shadow: 0 6px 18px rgba(218,41,28,0.15);
+}
+
+li::before {
+    content: "🍔";
+    margin-right: 18px;
+    font-size: 1.4em;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #da291c;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
