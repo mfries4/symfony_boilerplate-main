@@ -21,7 +21,25 @@
     <div class="sauce-list">
         <ul>
         {% for burger in burgers %}
-            <li>{{ burger.name }}</li>
+            <li style="display: flex; align-items: flex-start; justify-content: space-between;">
+                <span><strong>{{ burger.name }}</strong></span>
+                <span style="text-align: right; margin-left: 40px; font-size:0.95em; color:#7a5c00; min-width: 220px;">
+                    Prix : {{ burger.price|number_format(2, ',', ' ') }} €<br>
+                    Pain : {{ burger.pain ? burger.pain.name : '—' }}<br>
+                    Oignons :
+                    {% if burger.oignon|length > 0 %}
+                        {{ burger.oignon|map(o => o.name)|join(', ') }}
+                    {% else %}
+                        —
+                    {% endif %}<br>
+                    Sauces :
+                    {% if burger.sauce|length > 0 %}
+                        {{ burger.sauce|map(s => s.name)|join(', ') }}
+                    {% else %}
+                        —
+                    {% endif %}
+                </span>
+            </li>
         {% endfor %}
         </ul>
     </div>

@@ -23,6 +23,7 @@ class BurgerType extends AbstractType
             ->add('pain', EntityType::class, [
                 'class' => Pain::class,
                 'choice_label' => 'name',
+                'label' => 'Pain : '
             ])
             ->add('oignon', EntityType::class, [
                 'class' => Oignon::class,
