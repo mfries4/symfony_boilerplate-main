@@ -6,11 +6,26 @@
 {% block body %}
 {% block content %}
 
-<ul>
-{% for burger in burgers %}
-    <li>{{ burger.name }}</li>
-{% endfor %}
-</ul>
+<div class="sauce-flex">
+    <div class="sauce-form">
+        {{ form_start(form) }}
+            {{ form_row(form.name) }}
+            {{ form_row(form.price) }}
+            {{ form_row(form.pain) }}
+            {{ form_row(form.oignon) }}
+            {{ form_row(form.sauce) }}
+            {{ form_row(form.image) }}
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+        {{ form_end(form) }}
+    </div>
+    <div class="sauce-list">
+        <ul>
+        {% for burger in burgers %}
+            <li>{{ burger.name }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
 
 {% endblock %}
 {% endblock %}
