@@ -1,3 +1,21 @@
+.sauce-form select {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 20px;
+    border: 1px solid #ffcc00;
+    font-size: 1.1em;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(218,41,28,0.07);
+    background: #fff;
+    color: #000000;
+    font-family: inherit;
+}
+
+.sauce-form select:focus {
+    outline: none;
+    border-color: #ffe066;
+    background: #fffbe6;
+}
 /* Mise en page sauce */
 .sauce-flex {
     display: flex;
